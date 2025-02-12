@@ -21,7 +21,7 @@ log_client = cloud_logging.Client()
 log_client.setup_logging()
 
 PROJECT_ID = os.environ.get("azt-dev")  # Your Google Cloud Project ID
-LOCATION = os.environ.get("europe-west2")  # Your Google Cloud Project Region
+LOCATION = os.environ.get("europe-west1")  # Your Google Cloud Project Region
 vertexai.init(project=PROJECT_ID, location=LOCATION)
 
 @st.cache_resource

@@ -10,11 +10,11 @@ from google.genai.types import GenerateContentConfig, Part
 import streamlit as st
 
 API_KEY = os.environ.get("VERTEX_AI_API_KEY")
-PROJECT_ID = os.environ.get("GOOGLE_CLOUD_PROJECT")
-LOCATION = os.environ.get("GOOGLE_CLOUD_REGION")
+PROJECT_ID = os.environ.get("GCP_PROJECT")
+LOCATION = os.environ.get("GCP_REGION")
 
 if PROJECT_ID and not LOCATION:
-    LOCATION = "europe-west2"
+    LOCATION = "europe-west1"
 
 MODELS = {
     "gemini-2.0-flash-001": "Gemini 2.0 Flash",
