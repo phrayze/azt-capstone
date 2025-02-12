@@ -6,13 +6,19 @@
 | --------- | ---------------------------------------------------------------------------------------------- |
 | Author(s) | [Lavi Nigam](https://github.com/lavinigam-gcp), [Holt Skinner](https://github.com/holtskinner) |
 
+Modified by [Alan Tan](https://github.com/phrayze)
+
 This application demonstrates a Cloud Run application that uses the [Streamlit](https://streamlit.io/) framework.
 
-Sample screenshots and video demos of the application are shown below:
+This is a test application that demonstrates the use of Streamlit with Gemini API to allow users to upload an Image of their plate of food, and then analyse the contents, as well as caloric content of the food.
 
 ## Application screenshots
 
-<img src="https://storage.googleapis.com/github-repo/img/gemini/sample-apps/gemini-streamlit-cloudrun/assets/gemini_pro_text.png" width="50%" alt="Vertex AI Gemini App"/>
+<img src="https://storage.googleapis.com/azt-capstone/lunchaniser1.png" width="75%" alt="Lunch-a-niser App"/>
+
+<img src="https://storage.googleapis.com/azt-capstone/lunchaniser2.png" width="75%" alt="Lunch-a-niser App"/>
+
+<img src="https://storage.googleapis.com/azt-capstone/lunchaniser3.png" width="75%" alt="Lunch-a-niser App"/>
 
 ## Run the Application locally (on Cloud Shell)
 
