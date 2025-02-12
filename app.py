@@ -18,16 +18,6 @@ LOCATION = os.environ.get("GCP_REGION")
 if PROJECT_ID and not LOCATION:
     LOCATION = "europe-west1"
 
-MODELS = {
-    "gemini-2.0-flash-001": "Gemini 2.0 Flash",
-    "gemini-2.0-pro-exp-02-05": "Gemini 2.0 Pro",
-    "gemini-2.0-flash-lite-preview-02-05": "Gemini 2.0 Flash-Lite",
-    "gemini-2.0-flash-thinking-exp-01-21": "Gemini 2.0 Flash Thinking",
-    "gemini-1.5-flash": "Gemini 1.5 Flash",
-    "gemini-1.5-pro": "Gemini 1.5 Pro",
-}
-
-
 @st.cache_resource
 def load_client() -> genai.Client:
     """Load Google Gen AI Client."""
@@ -67,9 +57,10 @@ content = [
     st.session_state.image,
     "\n",
     "Add a short summary description of the picture",
-    "Also add each individual item you recognise in the picture, and estimate a rough number of calories"
-    "For each individual item, add the results into a table"
-    "The columns for the table would be 'Item', 'Description', 'Estimated Calories'"
+    "Also add each individual item you recognise in the picture, and estimate a rough number of calories",
+    "For each individual item, add the results into a table",
+    "The columns for the table would be 'Item', 'Description', 'Estimated Calories'",
+    "Add a final total for estimated calories as a range"
 ]
 config = GenerateContentConfig(temperature=0.8, max_output_tokens=8192)
 
