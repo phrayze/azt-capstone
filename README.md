@@ -12,6 +12,11 @@ This application demonstrates a Cloud Run application that uses the [Streamlit](
 
 This is a test application that demonstrates the use of Streamlit with Gemini API to allow users to upload an Image of their plate of food, and then analyse the contents, as well as caloric content of the food.
 
+## Todo
+- Add simple Authentication via OIDC https://docs.streamlit.io/develop/concepts/connections/authentication
+- Add backend database to store user profile, preferences and history of statistics
+- Figure out how to do reporting and presentation, i.e. weekly summaries, food log 
+
 ## Application screenshots
 
 <img src="https://storage.googleapis.com/azt-capstone/lunchaniser1.png" width="75%" alt="Lunch-a-niser App"/>
